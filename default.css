@@ -9,8 +9,8 @@ div#main {
   padding: 10%;
 }
 
-h2#result {
-  border: dashed 4px #AAA;
+div#list {
+  border: dashed 4px #AAF;
   background-color: #FFF;
   padding: 10px 20px;
 }

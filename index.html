@@ -1,20 +1,32 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>生まれて何日</title>
-  <link rel="stylesheet" href="default.css">
+  	<meta charset="UTF-8" />
+  	<title>テスト</title>
+  	<link rel="stylesheet" href="default.css">
 </head>
 <body>
   <div id="main">
-    <h1>あなたの誕生日を入力してください</h1>
-    <h2 style="display: none" id="result"></h2>
-    <form method="post" onsubmit="calculateBirthday(); return false;">
-      <input type="number" id="year" name="year" value=2000>年
-      <input type="number" id="month" name="month" value=1 min=1 max=12>月
-      <input type="number" id="day" name="day" value=1 min=1 max=31>日
-      <input type="submit" value="この日が私の誕生日です">
-    </form>
-  </div>
+    	<h1>To Do チェック</h1>
+    	<fieldset><legend>期限</legend>
+    		<input type="number" id="year" name="year" value=2000>年
+-    		<input type="number" id="month" name="month" value=1 min=1 max=12>月
+-    		<input type="number" id="day" name="day" value=1 min=1 max=31>日
+		</fieldset>
+     		<p>タスクの入力：　　　　　　　　<input type="text" id="formText" ></p>
+     		<p>インデックスから削除：　　　<input type="number" id="deleteText"></p>
+     		<input id="formButton" type="button" value="追加">
+     		<input id="removeButton" type="button" onClick="removeText()" value="削除">
+    		<input id="removeAllButton" type="button" onClick="removeAllText()" value="全削除">
+   </div>
 
-  <script type="text/javascript" src="birthday.js"></script>
+
+   <fieldset>
+   <div id="list"></div>
+   </fieldset>
+
+	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+ 	<script type="text/javascript" src="to_do.js"></script>
+
 </body>
 </html>
